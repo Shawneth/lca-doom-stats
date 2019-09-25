@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="28">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>0</ID>
+      <Description>"Damage Factor"</Description>
+      <VariableType>Float</VariableType>
+      <Address>zandronum-svr.exe+18B3438</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"Map Name"</Description>
+      <VariableType>String</VariableType>
+      <Length>50</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>2E2A8FAC</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>3</ID>
+      <Description>"Map Name Memory Location Formula"</Description>
+      <VariableType>String</VariableType>
+      <Length>50</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>2E2A8FA0 + 6 * 4 - C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"Map Name Again"</Description>
+      <VariableType>String</VariableType>
+      <Length>50</Length>
+      <Unicode>0</Unicode>
+      <CodePage>0</CodePage>
+      <ZeroTerminate>1</ZeroTerminate>
+      <Address>2E924B04</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :mov [edi+esi],dl</Description>
+      <AddressString>zandronum.exe+4A2B98</AddressString>
+      <Before>
+        <Byte>30</Byte>
+        <Byte>3B</Byte>
+        <Byte>CF</Byte>
+        <Byte>72</Byte>
+        <Byte>03</Byte>
+      </Before>
+      <Actual>
+        <Byte>88</Byte>
+        <Byte>14</Byte>
+        <Byte>37</Byte>
+      </Actual>
+      <After>
+        <Byte>4F</Byte>
+        <Byte>83</Byte>
+        <Byte>FF</Byte>
+        <Byte>FF</Byte>
+        <Byte>75</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+  <Comments>Info about this table:
+</Comments>
+</CheatTable>

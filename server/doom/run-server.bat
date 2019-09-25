@@ -1,0 +1,1 @@
+zandronum-svr.exe -port 10666 -iwad "doom2.wad" -file "lexicon-alpha-build-122.pk3" "complex-doom.v26a2.pk3" "lca-v1.5.9.6.pk3" "lcadb-v1a2.pk3" "NewTextColours_260.pk3" "evecdsp-v3c" "lexicon-miscdata-alpha-build-122.pk3" +exec global.cfg -host +databasefile lcadb

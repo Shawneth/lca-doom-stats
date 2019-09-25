@@ -1,15 +1,29 @@
 {
+  "proxy": "http://localhost:3001/",
   "name": "minesweep",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/styles": "^3.0.0-alpha.10",
+    "@types/react": "^16.8.8",
+    "@types/socket.io-client": "^1.4.32",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "sqlite3": "^4.0.6",
+    "typescript": "^3.3.3333"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "concurrently \"nodemon .\" \"cd server/doom && run-server.bat\" --kill-others",
+    "deploy": "concurrently \"nodemon . deploy\" \"cd server/doom && run-server.bat\" --kill-others",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

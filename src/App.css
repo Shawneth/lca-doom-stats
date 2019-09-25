@@ -1,33 +1,91 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur');
+
+body {
+  background-image: url('assets/background-2.jpg');
+  background-size: cover;
+}
+
+#root {
+  background-color: rgba(248, 248, 248, 0.24);
+}
+
+.PlayerStats {
+  margin: 0 auto;
+  width: min-content;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.Dialog {
+  position: absolute;
+  left: calc(50% - 25em);
+  top: calc(50% - 25em);
+  width: 50em;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 2px 0;
+  padding: 2rem 0;
+  z-index: 1;
+}
+
+.Dialog.Stats {
+  display: grid;
+  align-items: center;
+  align-content: space-around;
+  grid-template-columns: 1fr 4fr;
+  grid-column-gap: 2em;
+  grid-template-areas: 
+    "i s"
+    "n s";
+}
+
+.Dialog.About {
+  padding: 2rem 2rem;
+}
+
+.Dialog h2 {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header {
+  grid-area: n;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.DeepStats {
+  grid-area: s;
+}
+
+.UserPicture {
+  grid-area: i;
+  width: 6em;
+  height: 6em;
+  justify-self: center;
+}
+
+.DeepStats img {
+  max-height: 2.5rem;
+}
+
+.DeepStats .ImageWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 2.5rem;
+  margin: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.UserPicture img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ModalBlock {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }

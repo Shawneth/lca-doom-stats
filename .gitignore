@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+server/doom/lcadb
+server/doom/zandronum.pk3
+server/doom/zandronum-Shawn LaFrance.ini
+*.log
+*.pk3
+server/doom/doom2.wad
+server/doom/doom.wad
+monster-registerer-generator/export/DECORATE.txt
+monster-registerer-generator/inject.txt
+monster-registerer-generator/input/DECORATE.txt
+monster-registerer-generator/main.js
+monster-registerer-generator/package-lock.json
+monster-registerer-generator/package.json
